@@ -91,7 +91,7 @@
                 </div>
             </div>
         </section>
-        <section class="testimonial container-fluid">
+        <section class="testimonial container-fluid d-none d-md-block">
             <div class="container py-5 text-center text-md-start">
                 <p class="content__title">What they said?</p>
                 <h2 class="content__bodytext w-md-75 fs-2 pb-3 pt-3">Our Client</h2>
