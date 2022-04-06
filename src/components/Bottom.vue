@@ -1,7 +1,7 @@
 <template>
     <section class="close p-5 bg-light-blue-media mt-5">
         <div class="container text-center text-md-start">
-            <img src="../assets/JRE MEDIA logo.svg" alt="JRE Media" style="width:58px; height:42px">
+            <img src="../assets/JREMEDIAlogo.svg" alt="JRE Media" style="width:58px; height:42px">
             <div class="footnote row mt-5 mt-md-1 g-5 ps-md-5 align-items-baseline">
                 <div class="col-md-2 col-8">
                     <h5 class="fw-bolder mb-4">Another Service</h5>
@@ -58,18 +58,12 @@
 </template>
 
 <script>
-import closingSvg from '@/assets/closing.svg';
 import { Icon } from '@iconify/vue';
 
 export default {
   name: 'Closing',
   components: {
     Icon,
-  },
-  data() {
-    return {
-      closingSvg,
-    };
   },
 };
 </script>

@@ -10,7 +10,7 @@
                     </button>
                 </div>
                 <div class="col my-5 my-md-0 d-none d-md-block">
-                    <img src="../../assets/images/Photo Banner.png" alt="JRE Media Image Banner">
+                    <img src="../../assets/images/PhotoBanner.png" alt="JRE Media Image Banner">
                 </div>
             </div>
         </div>

@@ -24,7 +24,7 @@
                         <div class="row p-5 p-md-0">
                             <div class="col-12 col-md-3 card">
                                 <div class="content__card-Header">
-                                    <img src="../../assets/images/social media management.jpg" alt="https://unsplash.com/photos/Ebb8fe-NZtM?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">
+                                    <img src="../../assets/images/socialmediamanagement.jpg" alt="https://unsplash.com/photos/Ebb8fe-NZtM?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">
                                 </div>
                                 <div class="content__card-Body p-4">
                                     <h5 class="content__card-body-title">Social Media Management</h5>
@@ -33,7 +33,7 @@
                             </div>                            
                             <div class="col-12 col-md-3 card">
                                 <div class="content__card-Header">
-                                    <img src="../../assets/images/reels & tiktok.jpg" alt="https://unsplash.com/photos/ZmY7AG1l0Eo?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">
+                                    <img src="../../assets/images/reels&tiktok.jpg" alt="https://unsplash.com/photos/ZmY7AG1l0Eo?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">
                                 </div>
                                 <div class="content__card-Body p-4">
                                     <h5 class="content__card-body-title">Reels & TikTok</h5>
@@ -42,7 +42,7 @@
                             </div>                            
                             <div class="col-12 col-md-3 card">
                                 <div class="content__card-Header">
-                                    <img src="../../assets/images/creative design.jpg" alt="https://unsplash.com/photos/yapBRdPWxik?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">
+                                    <img src="../../assets/images/creativedesign.jpg" alt="https://unsplash.com/photos/yapBRdPWxik?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">
                                 </div>
                                 <div class="content__card-Body p-4">
                                     <h5 class="content__card-body-title">Creative Design</h5>
@@ -51,7 +51,7 @@
                             </div>                            
                             <div class="col-12 col-md-3 card">
                                 <div class="content__card-Header">
-                                    <img src="../../assets/images/web development.jpg" alt="https://unsplash.com/photos/eYpcLDXHVb0?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">
+                                    <img src="../../assets/images/webdevelopment.jpg" alt="https://unsplash.com/photos/eYpcLDXHVb0?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">
                                 </div>
                                 <div class="content__card-Body p-4">
                                     <h5 class="content__card-body-title">Web Development</h5>
@@ -60,7 +60,7 @@
                             </div>                            
                             <div class="col-12 col-md-3 card">
                                 <div class="content__card-Header">
-                                    <img src="../../assets/images/photography & video.jpg" alt="https://unsplash.com/photos/aS4Duj2j7r4?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">
+                                    <img src="../../assets/images/photography&video.jpg" alt="https://unsplash.com/photos/aS4Duj2j7r4?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">
                                 </div>
                                 <div class="content__card-Body p-4">
                                     <h5 class="content__card-body-title">Photography & Video</h5>
