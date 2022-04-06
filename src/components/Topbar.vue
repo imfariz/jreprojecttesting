@@ -2,7 +2,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light-media">
     <div class="container">
         <a class="navbar-brand fs-1" href="#">
-            <img src="../assets/JRE MEDIA logo.svg" style="width:58px; height:42px">
+            <img src="../assets/JREMEDIAlogo.svg" style="width:58px; height:42px">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
