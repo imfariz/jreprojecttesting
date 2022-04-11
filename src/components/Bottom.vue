@@ -3,7 +3,7 @@
         <div class="container text-center text-md-start">
             <img src="../assets/JREMEDIAlogo.svg" alt="JRE Media" style="width:58px; height:42px">
             <div class="footnote row mt-5 mt-md-1 g-5 ps-md-5 align-items-baseline">
-                <div class="col-md-2 col-8">
+                <div class="col-md-3 col-8">
                     <h5 class="fw-bolder mb-4">Another Service</h5>
                     <ul>
                         <li>JRE Media</li>
@@ -11,14 +11,7 @@
                         <li>JRE Bengkel</li>
                     </ul>
                 </div>
-                <div class="col-md-2 col-4">
-                    <h5 class="fw-bolder mb-4">LAINNYA</h5>
-                    <ul>
-                        <li>Blog</li>
-                        <li>Kebijakan</li>
-                    </ul>
-                </div>
-                <div class="sosmed col-md-2 col-12 my-5 my-md-0">
+                <div class="sosmed col-md-4 col-12 my-5 my-md-0">
                     <h5 class="fw-bolder mb-4">SOSIAL MEDIA</h5>
                     <div class="icons text-center rounded-3 me-3">
                         <a href="https://www.facebook.com/JREMediaIndonesia/" target="_blank">

@@ -20,13 +20,33 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#" :class="{ active: current === 'Layanan' }"
                     @click="current = 'Layanan'">
-                        JRE FURNITUR
+                        JRE FURNITUR 
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" :class="{ active: current === 'Portofolio' }"
                     @click="current = 'Portofolio'">
                         JRE BENGKEL
+                    </a>
+                </li>
+            </ul>
+            <ul class="social-media mt-4 mt-md-0 d-flex justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.facebook.com/JREMediaIndonesia/">
+                        <i class="bi bi-facebook"></i>
+                        <!-- <span class="ms-1">Facebook</span> -->
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://id.linkedin.com/in/jre-media-042a58181">
+                        <i class="bi bi-linkedin"></i>
+                        <!-- <span class="ms-1">Linkedin</span> -->
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.instagram.com/jre.media/">
+                        <i class="bi bi-instagram"></i>
+                        <!-- <span class="ms-1">Instagram</span> -->
                     </a>
                 </li>
             </ul>
@@ -55,6 +75,32 @@ export default {
 </script>
 
 <style scoped>
+
+.social-media li a {
+    text-decoration: none;
+    color: #949494;
+}
+
+.social-media li {
+    list-style: none;
+}
+
+i {
+    font-size: 2em;
+}
+
+i.bi-facebook:hover {
+    color: #4267B2;
+}
+
+i.bi-linkedin:hover {
+    color: #0072b1;
+}
+
+i.bi-instagram:hover {
+    color: #8a3ab9;
+}
+
 .bg-light-media {
     background-color: #FDF6FC;
 }
