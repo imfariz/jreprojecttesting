@@ -10,16 +10,31 @@ import Bottom from './components/Bottom.vue';
 <template>
   <Topbar />
   <header>
-    <Header />
+    <Header @linkedToMedia="anchorToMedia" />
   </header>
   <main>
-      <MainContent />
+      <MainContent @linkedToMedia="anchorToMedia" />
   </main>
   <footer>
     <Bottom/>
   </footer>
 </template>
 
+<script>
+export default {
+  name: 'application',
+  data() {
+    return {
+      JreMedia: '081215750518',
+    }
+  },
+  methods: {
+    anchorToMedia() {
+      window.open(`https://wa.me/`+ this.JreMedia);
+    },
+  },
+};
+</script>
 <style>
 
 #app {
