@@ -1,37 +1,33 @@
 <template>
         <section class="what container-fluid bg-light-blue-media d-flex align-items-center">
             <div class="container py-5 text-center text-md-start">
-                <p class="content__title">Who JRE MEDIA?</p>
-                <h2 class="content__bodytext fs-2 pb-5 pt-3">JRE MEDIA is Jogja Kreasi Media, creative agency based in Yogyakarta, Indonesia. We’re focusing on digital marketing, social media management, web development, photography, and other.</h2>
-                <button class="btn btn__hero-banner mt-5" @click="$emit('linkedToMedia')">
-                        <i class="bi bi-whatsapp">
-                            <p class="d-inline ms-1 btn__text">Contact Us</p>    
-                        </i> 
-                    </button>
+                <p class="content__title">Why BENGKEL JRE?</p>
+                <h2 class="content__bodytext fs-1 pb-5 pt-3">Bengkel JRE boasts a state-of-the-art fabrication and welding workshop with a professional team. We are based in Yogyakarta.</h2>
+                <button class="btn btn-bengkel" @click="$emit('linkedToMedia')">
+                    <i class="bi bi-whatsapp me-1"></i> Contact Us
+                </button>
             </div>
         </section>
-        <section class="services container-fluid">
+        <section class="services container-fluid py-5">
             <div class="container py-5 text-center text-md-start">
                 <div class="row align-items-center">
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <p class="content__title">What we do?</p>
-                        <h2 class="content__bodytext fs-2 pb-5 pt-3">
-                            We helps <br> to personalizing <br> your brands 
+                        <h2 class="content__bodytext fs-2 pb-3 pt-3">
+                            Our Expertise 
                         </h2>
-                        <button class="btn btn__hero-banner mt-5" @click="$emit('linkedToMedia')">
-                        <i class="bi bi-whatsapp">
-                            <p class="d-inline ms-1 btn__text">Contact Us</p>    
-                        </i> 
-                    </button>
+                        <button class="btn btn-bengkel" @click="$emit('linkedToMedia')">
+                            <i class="bi bi-whatsapp me-1"></i> Contact Us
+                        </button>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-9">
                         <div class="row p-5 p-md-0 d-flex justify-content-center">
                             <div class="card">
                                 <div class="content__card-Header">
                                     <img src="../../assets/images/socialmediamanagement.jpg" alt="https://unsplash.com/photos/Ebb8fe-NZtM?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">
                                 </div>
                                 <div class="content__card-Body p-4">
-                                    <h5 class="content__card-body-title">Social Media Management</h5>
+                                    <h5 class="content__card-body-title">Welding Workshop</h5>
                                     <!-- <p class="content__card-body-description mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro optio quo omnis facere perferendis hic odio ad magni! Molestias, sequi.</p> -->
                                 </div>
                             </div>                            
@@ -40,7 +36,7 @@
                                     <img src="../../assets/images/reels&tiktok.jpg" alt="https://unsplash.com/photos/ZmY7AG1l0Eo?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">
                                 </div>
                                 <div class="content__card-Body p-4">
-                                    <h5 class="content__card-body-title">Reels & TikTok</h5>
+                                    <h5 class="content__card-body-title">Installation Support</h5>
                                     <!-- <p class="content__card-body-description mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro optio quo omnis facere perferendis hic odio ad magni! Molestias, sequi.</p> -->
                                 </div>
                             </div>                            
@@ -49,28 +45,10 @@
                                     <img src="../../assets/images/creativedesign.jpg" alt="https://unsplash.com/photos/yapBRdPWxik?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">
                                 </div>
                                 <div class="content__card-Body p-4">
-                                    <h5 class="content__card-body-title">Creative Design</h5>
+                                    <h5 class="content__card-body-title">Manufacturing Engineering</h5>
                                     <!-- <p class="content__card-body-description mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro optio quo omnis facere perferendis hic odio ad magni! Molestias, sequi.</p> -->
                                 </div>
-                            </div>                            
-                            <div class="card">
-                                <div class="content__card-Header">
-                                    <img src="../../assets/images/webdevelopment.jpg" alt="https://unsplash.com/photos/eYpcLDXHVb0?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">
-                                </div>
-                                <div class="content__card-Body p-4">
-                                    <h5 class="content__card-body-title">Web Development</h5>
-                                    <!-- <p class="content__card-body-description mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro optio quo omnis facere perferendis hic odio ad magni! Molestias, sequi.</p> -->
-                                </div>
-                            </div>                            
-                            <div class="card">
-                                <div class="content__card-Header">
-                                    <img src="../../assets/images/photography&video.jpg" alt="https://unsplash.com/photos/aS4Duj2j7r4?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">
-                                </div>
-                                <div class="content__card-Body p-4">
-                                    <h5 class="content__card-body-title">Photography & Video</h5>
-                                    <!-- <p class="content__card-body-description mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro optio quo omnis facere perferendis hic odio ad magni! Molestias, sequi.</p> -->
-                                </div>
-                            </div>                            
+                            </div>                         
                         </div>
                     </div>
                 </div>
@@ -80,11 +58,9 @@
             <div class="container py-5 text-center text-md-start">
                 <p class="content__title">What we've done?</p>
                 <h2 class="content__bodytext w-md-75 fs-2 py-4">We Develop Your <br> Brand with Passions</h2> 
-                <button class="btn btn__hero-banner mt-5" @click="$emit('linkedToMedia')">
-                        <i class="bi bi-whatsapp">
-                            <p class="d-inline ms-1 btn__text">Contact Us</p>    
-                        </i> 
-                    </button>
+                <button class="btn btn-bengkel" @click="$emit('linkedToMedia')">
+                    <i class="bi bi-whatsapp me-1"></i> Contact Us
+                </button>
                 <div class="row g-5 pt-5 mt-2">
                     <div class="content__portofolio d-flex flex-column align-items-center col-md-4" v-for="porto in porto" :key="porto">
                         <img :src="porto.imagePath"
@@ -100,8 +76,6 @@
 </template>
 
 <script>
-
-
 export default {
 name: 'Portofolio',
 data() {
@@ -180,6 +154,7 @@ data() {
 
 .content__card-body-title {
     height: 2em;
+    line-height: 1.3em;
 }
 
 

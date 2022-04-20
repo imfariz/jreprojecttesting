@@ -1,5 +1,11 @@
+<script setup>
+defineProps({
+    navbarBackground: String,
+})
+</script>
+
 <template>
-<nav class="navbar navbar-expand-lg navbar-light bg-light-media">
+<nav class="navbar navbar-expand-lg navbar-light bg-light-media" :style="{'background-color': backgroundFurnitur}">
     <div class="container">
         <a class="navbar-brand fs-1" href="#">
             <img src="../assets/JREMEDIAlogo.svg" style="width:58px; height:42px">
@@ -59,11 +65,12 @@
 export default {
   name: 'Navbar',
   props: {
-    title: String,
+    navbarBackground: '#EEE3DF',
   },
   data() {
     return {
       current: 'Beranda',
+      backgroundFurnitur: this.navbarBackground,
     };
   },
   methods: {

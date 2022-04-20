@@ -6,7 +6,11 @@
                     <h1 class="headline__hero-banner">Grow <br> Your Brands</h1>
                     <p class="bodycopy__hero-banner my-4">We are ready to help your business, promote your product, and manage your social media with the best strategics</p>
                     <button class="btn btn__hero-banner mt-5" @click="$emit('linkedToMedia')">
-                        <i class="bi bi-whatsapp me-1"></i> Contact Us
+                        <div class="btn__text">
+                            <i class="bi bi-whatsapp">
+                                <p class="d-inline ms-1">Contact Us</p>    
+                            </i>
+                        </div>
                     </button>
                 </div>
                 <div class="col my-5 my-md-0 d-none d-md-block">
