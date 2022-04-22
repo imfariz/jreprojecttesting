@@ -119,8 +119,4 @@ i.bi-instagram:hover {
 .active {
     font-weight: 700;
 }
-
-.bg-light-red {
-    background-color: #FFF9F9;
-}
 </style>

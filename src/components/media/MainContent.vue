@@ -2,12 +2,15 @@
         <section class="what container-fluid bg-light-blue-media d-flex align-items-center">
             <div class="container py-5 text-center text-md-start">
                 <p class="content__title">Who JRE MEDIA?</p>
-                <h2 class="content__bodytext fs-2 pb-5 pt-3">JRE MEDIA is Jogja Kreasi Media, creative agency based in Yogyakarta, Indonesia. We’re focusing on digital marketing, social media management, web development, photography, and other.</h2>
-                <button class="btn btn__hero-banner mt-5" @click="$emit('linkedToMedia')">
-                        <i class="bi bi-whatsapp">
-                            <p class="d-inline ms-1 btn__text">Contact Us</p>    
-                        </i> 
-                    </button>
+                <h2 class="content__bodytext fs-2 pt-3">JRE MEDIA is Jogja Kreasi Media, creative agency based in Yogyakarta, Indonesia. We’re focusing on digital marketing, social media management, web development, photography, and other.</h2>
+                <button class="btn btn__hero-banner d-flex" @click="$emit('linkedToMedia')">
+                    <img src="../../assets/CTA-Arrow.svg" alt="CTA-Arrow" class="btn__arrow">
+                        <div class="btn__text">
+                            <i class="bi bi-whatsapp">
+                            </i>
+                                <p class="d-inline ms-1">Contact Us</p>    
+                        </div>
+                </button>
             </div>
         </section>
         <section class="services container-fluid">
@@ -15,14 +18,17 @@
                 <div class="row align-items-center">
                     <div class="col-md-4">
                         <p class="content__title">What we do?</p>
-                        <h2 class="content__bodytext fs-2 pb-5 pt-3">
+                        <h2 class="content__bodytext fs-2 pt-3">
                             We helps <br> to personalizing <br> your brands 
                         </h2>
-                        <button class="btn btn__hero-banner mt-5" @click="$emit('linkedToMedia')">
-                        <i class="bi bi-whatsapp">
-                            <p class="d-inline ms-1 btn__text">Contact Us</p>    
-                        </i> 
-                    </button>
+                        <button class="btn btn__hero-banner d-flex mt-5" @click="$emit('linkedToMedia')">
+                    <img src="../../assets/CTA-Arrow.svg" alt="CTA-Arrow" class="btn__arrow">
+                        <div class="btn__text">
+                            <i class="bi bi-whatsapp">
+                            </i>
+                                <p class="d-inline ms-1">Contact Us</p>    
+                        </div>
+                </button>
                     </div>
                     <div class="col-md-8">
                         <div class="row p-5 p-md-0 d-flex justify-content-center">
@@ -80,11 +86,14 @@
             <div class="container py-5 text-center text-md-start">
                 <p class="content__title">What we've done?</p>
                 <h2 class="content__bodytext w-md-75 fs-2 py-4">We Develop Your <br> Brand with Passions</h2> 
-                <button class="btn btn__hero-banner mt-5" @click="$emit('linkedToMedia')">
-                        <i class="bi bi-whatsapp">
-                            <p class="d-inline ms-1 btn__text">Contact Us</p>    
-                        </i> 
-                    </button>
+                <button class="btn btn__hero-banner d-flex mt-5" @click="$emit('linkedToMedia')">
+                    <img src="../../assets/CTA-Arrow.svg" alt="CTA-Arrow" class="btn__arrow">
+                        <div class="btn__text">
+                            <i class="bi bi-whatsapp">
+                            </i>
+                                <p class="d-inline ms-1">Contact Us</p>    
+                        </div>
+                </button>
                 <div class="row g-5 pt-5 mt-2">
                     <div class="content__portofolio d-flex flex-column align-items-center col-md-4" v-for="porto in porto" :key="porto">
                         <img :src="porto.imagePath"
@@ -103,7 +112,7 @@
 
 
 export default {
-name: 'Portofolio',
+name: 'Media',
 data() {
     return {
     porto: [{
@@ -228,9 +237,47 @@ data() {
     left: 50%;
 }
 
-img.content__avatar {
-    width: 130px;
-    height: 130px;
+/* Button CTA */
+.btn {
+position: relative;
+width: 50px;
+height: 50px;
+border-radius: 32px;
+display: flex;
+align-items: center;
+}
+.btn__text {
+/* display: inline-block; */
+position: absolute;
+width: 200px;
+transform: translateX(2em);
+color: #000;
+}
+.btn__arrow {
+    width: 50px;
+    transform: translateX(1.6em);
+}
+.bi-whatsapp {
+    display: none;
+}
+.btn:hover {
+    width: 200px;
+    height: 50px;
+    justify-content: center;
+    animation: widdingColor 1s;
+    overflow: hidden;
+}
+.btn:hover .btn__text {
+    transform: translateX(0em);
+    color: #fff;
+}
+.btn:hover .btn__arrow {
+    animation: arrowRemoving 1s;
+    opacity: 0;
+}
+
+.btn:hover .bi-whatsapp {
+    display: inline-block;
 }
 
 img {
@@ -239,5 +286,22 @@ img {
     height: 100%;
     object-fit: cover;
     transition: .5s ease;
+}
+
+/* Animation of CTA */
+@keyframes widdingColor {
+    from {width: 50px;}
+    to {width: 200px;}
+}
+
+@keyframes arrowRemoving {
+    0% {
+        opacity: 1;
+        transform: translateX(1.6em);
+    }
+    100% {
+        transform: translateX(40em);
+        opacity: 0;
+    }
 }
 </style>
