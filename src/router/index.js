@@ -1,6 +1,6 @@
-import Media from '../components/media/MainContent.vue'
-import Furnitur from '../components/furniture/CatalogueContent.vue'
-import Bengkel from '../components/bengkel/BengkelContent.vue'
+import Furnitur from '../components/Furnitur.vue'
+import Bengkel from '../components/Bengkel.vue'
+import Media from '../components/Media.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [

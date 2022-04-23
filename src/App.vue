@@ -1,21 +1,14 @@
 <script setup>
-import Topbar from './components/Topbar.vue'
-import MediaHeader from './components/media/MediaHeader.vue'
-import MainContent from './components/media/MainContent.vue';
 import Bottom from './components/Bottom.vue';
-import FurniturHeader from './components/furniture/FurniturHeader.vue';
-import CatalogueContent from './components/furniture/CatalogueContent.vue';
-import BengkelHeader from './components/bengkel/BengkelHeader.vue';
-import BengkelContent from './components/bengkel/BengkelContent.vue';
 import Testimoni from './components/Testimoni.vue';
+
 </script>
 
 <template>
-  <!-- <Topbar :navbarBackground="backgroundMedia" /> -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light-media" :style="{'background-color': backgroundMedia}">
+  <nav class="navbar navbar-expand-lg navbar-light" :style="{'background-color' : backgroundColor}">
     <div class="container">
         <a class="navbar-brand fs-1" href="#">
-            <img src="./assets/JREMEDIAlogo.svg" style="width:58px; height:42px">
+            <img :src="logo" style="width:58px; height:42px">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -25,20 +18,20 @@ import Testimoni from './components/Testimoni.vue';
         <div class="collapse navbar-collapse pt-2 ms-2" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto">
                 <li class="nav-item">
-                    <router-link class="nav-link" to="/" :class="{ active: current === 'Beranda' }"
-                    @click="current = 'Beranda'">
+                    <router-link class="nav-link" to="/" :class="{ active: current === 'Media' }"
+                    @click="current = 'Media'">
                         JRE MEDIA
                     </router-link>
                 </li>
                 <li class="nav-item">
-                    <router-link class="nav-link" to="/furnitur" :class="{ active: current === 'Layanan' }"
-                    @click="current = 'Layanan'">
+                    <router-link class="nav-link" to="/furnitur" :class="{ active: current === 'Furnitur' }"
+                    @click="current = 'Furnitur'">
                         JRE FURNITUR 
                     </router-link>
                 </li>
                 <li class="nav-item">
-                    <router-link class="nav-link" to="/bengkel" :class="{ active: current === 'Portofolio' }"
-                    @click="current = 'Portofolio'">
+                    <router-link class="nav-link" to="/bengkel" :class="{ active: current === 'Bengkel' }"
+                    @click="current = 'Bengkel'">
                         JRE BENGKEL
                     </router-link>
                 </li>
@@ -66,16 +59,8 @@ import Testimoni from './components/Testimoni.vue';
         </div>
     </div>
 </nav>
-  <header>
-    <MediaHeader @linkedToMedia="anchorToMedia" />
-    <!-- <FurniturHeader @linkedToMedia="anchorToMedia" /> -->
-    <!-- <BengkelHeader @linkedToMedia="anchorToMedia" /> -->
-  </header>
   <main>
-      <!-- <MainContent @linkedToMedia="anchorToMedia" /> -->
-      <router-view></router-view>
-      <!-- <CatalogueContent /> -->
-      <!-- <BengkelContent @linkedToMedia="anchorToMedia" /> -->
+      <router-view @linkedToMedia="anchorToMedia"></router-view>
       <Testimoni />
   </main>
   <footer>
@@ -92,6 +77,14 @@ export default {
       backgroundMedia: '#FDF6FC',
       backgroundFurnitur: '#EEE3DF',
       backgroundBengkel: '#FFF',
+      // Adjusting Navbar
+      current: 'Media',
+      logo: './logo/JREMEDIAlogo.svg',
+      backgroundColor: '#FDF6FC',
+      // Logo Path
+      MEDIAlogo: './logo/JREMEDIAlogo.svg',
+      FURNITURlogo: './logo/JREFURNITURlogo.svg',
+      BENGKELlogo: './logo/JREBENGKELlogo.svg',
     }
   },
   methods: {
@@ -99,6 +92,21 @@ export default {
       window.open(`https://wa.me/`+ this.JreMedia);
     },
   },
+  watch: {
+    current: function () {
+      if(this.current === 'Media') {
+        this.logo = this.MEDIAlogo
+        this.backgroundColor = this.backgroundMedia
+      } else if(this.current === 'Furnitur') {
+        this.logo = this.FURNITURlogo
+        this.backgroundColor = this.backgroundFurnitur
+      } else {
+        this.logo = this.BENGKELlogo
+        this.backgroundColor = this.backgroundBengkel
+      }
+      console.log(this.current)
+    }
+  }
 };
 </script>
 <style>
