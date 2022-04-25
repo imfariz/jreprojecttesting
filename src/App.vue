@@ -40,19 +40,19 @@ import Testimoni from './components/Testimoni.vue';
                 <li class="nav-item">
                     <a class="nav-link" href="https://www.facebook.com/JREMediaIndonesia/">
                         <i class="bi bi-facebook"></i>
-                        <!-- <span class="ms-1">Facebook</span> -->
+                        <span class="ms-3">Facebook</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="https://id.linkedin.com/in/jre-media-042a58181">
                         <i class="bi bi-linkedin"></i>
-                        <!-- <span class="ms-1">Linkedin</span> -->
+                        <span class="ms-3">Linkedin</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="https://www.instagram.com/jre.media/">
                         <i class="bi bi-instagram"></i>
-                        <!-- <span class="ms-1">Instagram</span> -->
+                        <span class="ms-3">Instagram</span>
                     </a>
                 </li>
             </ul>
@@ -204,7 +204,8 @@ export default {
 }
 
 .social-media i {
-    font-size: 2em;
+    font-size: 30px;
+    line-height: 45px;
 }
 
 .social-media i.bi-facebook:hover {
@@ -222,9 +223,38 @@ export default {
 .bg-light-media {
     background-color: #FDF6FC;
 }
+
 .nav-item {
-    font-weight: 500;
-    margin-left: 1.5rem;
+  font-weight: 500;
+  margin-left: 1.5rem;
+}
+
+.social-media .nav-item {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 50px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.social-media span {
+  display: none;
+}
+
+@media only screen and (min-width: 992px) {
+  .social-media span {
+    display: none;
+  }
+
+  .social-media .nav-item:hover span{
+    display: inline-block;
+  }
+
+  .social-media .nav-item:hover {
+    width: 200px;
+    transition: all 0.3s ease-out;
+  }
 }
 
 .active {
