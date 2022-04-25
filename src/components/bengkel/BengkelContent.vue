@@ -54,10 +54,10 @@
                 </div>
             </div>
         </section>
-        <section class="portofolio container-fluid bg-light-media">
+        <section class="portofolio container-fluid bg-light-red-bengkel">
             <div class="container py-5 text-center text-md-start">
                 <p class="content__title">What we've done?</p>
-                <h2 class="content__bodytext w-md-75 fs-2 py-4">We Develop Your <br> Brand with Passions</h2> 
+                <h2 class="content__bodytext w-md-75 fs-2 py-4">Recent <br> Products</h2> 
                 <button class="btn btn-bengkel" @click="$emit('linkedToMedia')">
                     <i class="bi bi-whatsapp me-1"></i> Contact Us
                 </button>

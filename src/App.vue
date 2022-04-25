@@ -101,12 +101,10 @@ export default {
       if(this.current === 'Media') {
         this.logo = this.MEDIAlogo
         this.backgroundColor = this.backgroundMedia
-        this.fontBottomColor = '#000'
         this.backgroundBottomColor = this.backgroundMedia
       } else if(this.current === 'Furnitur') {
         this.logo = this.FURNITURlogo
         this.backgroundColor = this.backgroundFurnitur
-        this.fontBottomColor = '#000'
         this.backgroundBottomColor = this.backgroundFurnitur
       } else {
         this.logo = this.BENGKELlogo
@@ -135,6 +133,10 @@ export default {
 
 .bg-light-blue-media {
   background-color: #DDF5FD;
+}
+
+.bg-light-red-bengkel {
+  background-color: #FFE7E8;
 }
 
 .bg-dark-blue-bengkel {
