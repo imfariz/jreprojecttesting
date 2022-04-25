@@ -1,10 +1,15 @@
+<script setup>
+defineProps({
+    navbarBackground: String,
+})
+</script>
 <template>
     <section class="testimonial container-fluid d-none d-md-block">
             <div class="container py-5 text-center text-md-start">
                 <p class="content__title">What they said?</p>
                 <h2 class="content__bodytext w-md-75 fs-2 pb-3 pt-3">Our Client</h2>
                 <div class="row px-5">
-                    <div class="col bg-light-blue-media p-3">
+                    <div class="col p-3" :style="{'background-color':navbarBackground}">
                         <div class="row p-5 content__testimonial ">
                             <div class="col-md-2">
                                 <img class="content__avatar d-none d-md-block" src="../assets/images/testimonial-avatar.png" alt="Client Avatar">

@@ -3,8 +3,8 @@
             <div class="container py-5 text-center text-md-start">
                 <p class="content__title">Who JRE MEDIA?</p>
                 <h2 class="content__bodytext fs-2 pt-3">JRE MEDIA is Jogja Kreasi Media, creative agency based in Yogyakarta, Indonesia. We’re focusing on digital marketing, social media management, web development, photography, and other.</h2>
-                <button class="btn btn__hero-banner d-flex" @click="$emit('linkedToMedia')">
-                    <img src="../../assets/CTA-Arrow.svg" alt="CTA-Arrow" class="btn__arrow">
+                <button class="btn btn__hero-banner mt-5" @click="$emit('linkedToMedia')">
+                    <!-- <img src="../../assets/CTA-Arrow.svg" alt="CTA-Arrow" class="btn__arrow"> -->
                         <div class="btn__text">
                             <i class="bi bi-whatsapp">
                             </i>
@@ -21,7 +21,7 @@
                         <h2 class="content__bodytext fs-2 pt-3">
                             We helps <br> to personalizing <br> your brands 
                         </h2>
-                        <button class="btn btn__hero-banner d-flex mt-5" @click="$emit('linkedToMedia')">
+                        <button class="btn btn__hero-banner mt-5" @click="$emit('linkedToMedia')">
                     <img src="../../assets/CTA-Arrow.svg" alt="CTA-Arrow" class="btn__arrow">
                         <div class="btn__text">
                             <i class="bi bi-whatsapp">
@@ -86,7 +86,7 @@
             <div class="container py-5 text-center text-md-start">
                 <p class="content__title">What we've done?</p>
                 <h2 class="content__bodytext w-md-75 fs-2 py-4">We Develop Your <br> Brand with Passions</h2> 
-                <button class="btn btn__hero-banner d-flex mt-5" @click="$emit('linkedToMedia')">
+                <button class="btn btn__hero-banner mt-2" @click="$emit('linkedToMedia')">
                     <img src="../../assets/CTA-Arrow.svg" alt="CTA-Arrow" class="btn__arrow">
                         <div class="btn__text">
                             <i class="bi bi-whatsapp">
@@ -95,12 +95,12 @@
                         </div>
                 </button>
                 <div class="row g-5 pt-5 mt-2">
-                    <div class="content__portofolio d-flex flex-column align-items-center col-md-4" v-for="porto in porto" :key="porto">
-                        <img :src="porto.imagePath"
+                    <div class="content__portofolio d-flex flex-column align-items-center col-md-4" v-for="index in portofolioLimit" :key="index">
+                        <img :src="portofolio[index].imagePath"
                         alt="Portofolio Image">
                         <div class="content__portofolio-description text-white text-center">
-                            <h5 class="lh-base">{{ porto.client }}</h5>
-                            <p class="fs-6">{{ porto.Category }}</p>
+                            <h5 class="lh-base">{{ portofolio[index].client }}</h5>
+                            <p class="fs-6 mt-3">{{ portofolio[index].Category }}</p>
                         </div>
                     </div>
                 </div>
@@ -115,31 +115,79 @@ export default {
 name: 'Media',
 data() {
     return {
-    porto: [{
-        imagePath: 'https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80',
-        client: 'XBRAND',
-        Category: 'Desain Ilustrasi TShirt',
-    }, {
-        imagePath: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=755&q=80',
-        client: 'PT XASDDAS',
-        Category: 'Website Development',
-    }, {
-        imagePath: 'https://images.unsplash.com/photo-1481487196290-c152efe083f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1924&q=80',
-        client: 'PT XASDDAS',
-        Category: 'Website Development',
-    }, {
-        imagePath: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80',
-        client: 'PT XASDDAS',
-        Category: 'Website Development',
-    }, {
-        imagePath: 'https://images.unsplash.com/photo-1530435460869-d13625c69bbf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
-        client: 'PT XASDDAS',
-        Category: 'Website Development',
-    }, {
-        imagePath: 'https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80',
-        client: 'PT XASDDAS',
-        Category: 'Website Development',
-    }],
+    portofolio: [
+    {
+        imagePath: './images/media/FGadaimu.jpg',
+        client: 'GADAIMU',
+        Category: 'Instagram Feed',
+    }, 
+    {
+        imagePath: './images/media/FTuesday.jpg',
+        client: 'Tuesday',
+        Category: 'Instagram Feed',
+    }, 
+    {
+        imagePath: './images/media/FNibbles.jpg',
+        client: 'Nibbles',
+        Category: 'Instagram Feed',
+    }, 
+    {
+        imagePath: './images/media/FMarkshare.jpg',
+        client: 'Markshare',
+        Category: 'Instagram Feed',
+    }, 
+    {
+        imagePath: './images/media/FJoghouse.jpg',
+        client: 'Jogja House',
+        Category: 'Instagram Feed',
+    }, 
+    {
+        imagePath: './images/media/FPTSSE.jpg',
+        client: 'PT SSE',
+        Category: 'Instagram Feed',
+    }, 
+    {
+        imagePath: './images/media/LCanB.jpg',
+        client: 'Can B',
+        Category: 'Logo',
+    }, 
+    {
+        imagePath: './images/media/LDentalPlus.jpg',
+        client: 'Dental Plus',
+        Category: 'Logo',
+    }, 
+    {
+        imagePath: './images/media/LJoghouse.jpg',
+        client: 'Jogja House',
+        Category: 'Logo',
+    }, 
+    {
+        imagePath: './images/media/LKebunSehat.jpg',
+        client: 'Kebun Sehat',
+        Category: 'Logo',
+    }, 
+    {
+        imagePath: './images/media/LNibbles.jpg',
+        client: 'Nibbles',
+        Category: 'Logo',
+    }, 
+    {
+        imagePath: './images/media/LOmachi.jpg',
+        client: 'Omachi',
+        Category: 'Logo',
+    }, 
+    {
+        imagePath: './images/media/LSeroja.jpg',
+        client: 'Seroja',
+        Category: 'Logo',
+    }, 
+    {
+        imagePath: './images/media/LTokoTani.jpg',
+        client: 'Toko Tani',
+        Category: 'Logo',
+    }, 
+    ],
+    portofolioLimit: 9,
     };
 },
 };
@@ -148,6 +196,8 @@ data() {
 <style scoped>
 .what {
     height: 80vh;
+    display: flex;
+    justify-content: center;
 }
 
 .content__title {
@@ -236,9 +286,11 @@ data() {
     top: 45%;
     left: 50%;
 }
-
+.btn__arrow {
+    display: none;
+}
 /* Button CTA */
-.btn {
+/* .btn {
 position: relative;
 width: 50px;
 height: 50px;
@@ -247,7 +299,6 @@ display: flex;
 align-items: center;
 }
 .btn__text {
-/* display: inline-block; */
 position: absolute;
 width: 200px;
 transform: translateX(2em);
@@ -271,15 +322,22 @@ color: #000;
     transform: translateX(0em);
     color: #fff;
 }
+.btn__text:hover .btn__text {
+    transform: translateX(0em);
+    color: #fff;
+}
 .btn:hover .btn__arrow {
     animation: arrowRemoving 1s;
     opacity: 0;
 }
+.btn__text:hover .btn__arrow {
+    animation: arrowRemoving 1s;
+    opacity: 0;
+} */
 
 .btn:hover .bi-whatsapp {
     display: inline-block;
 }
-
 img {
     display: block;
     width: 100%;
@@ -287,7 +345,6 @@ img {
     object-fit: cover;
     transition: .5s ease;
 }
-
 /* Animation of CTA */
 @keyframes widdingColor {
     from {width: 50px;}

@@ -61,10 +61,10 @@ import Testimoni from './components/Testimoni.vue';
 </nav>
   <main>
       <router-view @linkedToMedia="anchorToMedia"></router-view>
-      <Testimoni />
+      <Testimoni :navbarBackground="backgroundBottomColor" />
   </main>
   <footer>
-    <Bottom/>
+    <Bottom :navbarBackground="backgroundBottomColor" :logo="logo" />
   </footer>
 </template>
 
@@ -73,7 +73,8 @@ export default {
   name: 'application',
   data() {
     return {
-      JreMedia: '081215750518',
+      JreMedia: '6281215750518',
+      testing: '6282136948293',
       backgroundMedia: '#FDF6FC',
       backgroundFurnitur: '#EEE3DF',
       backgroundBengkel: '#FFF',
@@ -81,6 +82,9 @@ export default {
       current: 'Media',
       logo: './logo/JREMEDIAlogo.svg',
       backgroundColor: '#FDF6FC',
+      //Adjusting Bottom
+      fontBottomColor: "#000",
+      backgroundBottomColor: '#FDF6FC',
       // Logo Path
       MEDIAlogo: './logo/JREMEDIAlogo.svg',
       FURNITURlogo: './logo/JREFURNITURlogo.svg',
@@ -97,12 +101,17 @@ export default {
       if(this.current === 'Media') {
         this.logo = this.MEDIAlogo
         this.backgroundColor = this.backgroundMedia
+        this.fontBottomColor = '#000'
+        this.backgroundBottomColor = this.backgroundMedia
       } else if(this.current === 'Furnitur') {
         this.logo = this.FURNITURlogo
         this.backgroundColor = this.backgroundFurnitur
+        this.fontBottomColor = '#000'
+        this.backgroundBottomColor = this.backgroundFurnitur
       } else {
         this.logo = this.BENGKELlogo
         this.backgroundColor = this.backgroundBengkel
+        this.backgroundBottomColor = '#FFE7E8'
       }
       console.log(this.current)
     }

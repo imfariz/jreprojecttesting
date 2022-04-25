@@ -125,21 +125,6 @@ data() {
     line-height: 1.5em;
 }
 
-.content__button {
-    width: fit-content;
-    margin-left: auto;
-}
-
-.content__testimonial {
-    height: 300px;
-}
-
-.content__button button {
-    background-color: transparent;
-    width: 40px;
-    border: none;
-}
-
 .card {
     width: 200px;
     height: 250px;
@@ -156,7 +141,6 @@ data() {
     height: 2em;
     line-height: 1.3em;
 }
-
 
 .content__portofolio {
     height: 300px;
@@ -201,11 +185,6 @@ data() {
     position: absolute;
     top: 45%;
     left: 50%;
-}
-
-img.content__avatar {
-    width: 130px;
-    height: 130px;
 }
 
 img {

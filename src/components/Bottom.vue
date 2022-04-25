@@ -1,11 +1,17 @@
+<script setup>
+defineProps({
+    navbarBackground: String,
+    logo: String,
+})
+</script>
 <template>
-    <section class="close p-5 bg-light-blue-media mt-5">
+    <section class="close p-5 mt-5" :style="{'background-color':navbarBackground}">
         <div class="container text-center text-md-start">
-            <img src="../assets/JREMEDIAlogo.svg" alt="JRE Media" style="width:58px; height:42px">
+            <img :src="logo" alt="JRE Media" style="width:58px; height:42px">
             <div class="footnote row mt-5 mt-md-1 g-5 ps-md-5 align-items-baseline justify-content-center justify-content-md-start">
                 <div class="col-md-3 col-8">
                     <h5 class="fw-bolder mb-4">Another Service</h5>
-                    <ul class="list-group">
+                    <ul class="list-group" >
                         <li class="list-group-item">
                             <a href="#">JRE Media</a> 
                         </li>
@@ -29,8 +35,8 @@
                             <Icon icon="cib:linkedin-in" />
                         </a>
                     </div>
-                    <div class="icons text-center rounded-3" target="_blank">
-                        <a href="https://www.instagram.com/jre.media/">
+                    <div class="icons text-center rounded-3">
+                        <a href="https://www.instagram.com/jre.media/"  target="_blank">
                             <Icon icon="lucide:instagram" />
                         </a>
                     </div>
