@@ -34,7 +34,7 @@
                         <div class="row p-5 p-md-0 d-flex justify-content-center">
                             <div class="card">
                                 <div class="content__card-Header">
-                                    <img src="../../assets/images/socialmediamanagement.jpg" alt="https://unsplash.com/photos/Ebb8fe-NZtM?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">
+                                    <img src="../../assets/images/SocialEngagement.jpg" alt="https://unsplash.com/photos/Ebb8fe-NZtM?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">
                                 </div>
                                 <div class="content__card-Body p-4">
                                     <h5 class="content__card-body-title">Social Media Management</h5>
@@ -43,7 +43,7 @@
                             </div>                            
                             <div class="card">
                                 <div class="content__card-Header">
-                                    <img src="../../assets/images/reels&tiktok.jpg" alt="https://unsplash.com/photos/ZmY7AG1l0Eo?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">
+                                    <img src="../../assets/images/Reels&Tiktok.jpg" alt="https://unsplash.com/photos/ZmY7AG1l0Eo?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">
                                 </div>
                                 <div class="content__card-Body p-4">
                                     <h5 class="content__card-body-title">Reels & TikTok</h5>
@@ -52,7 +52,7 @@
                             </div>                            
                             <div class="card">
                                 <div class="content__card-Header">
-                                    <img src="../../assets/images/creativedesign.jpg" alt="https://unsplash.com/photos/yapBRdPWxik?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">
+                                    <img src="../../assets/images/creativeDesign.jpg" alt="https://unsplash.com/photos/yapBRdPWxik?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">
                                 </div>
                                 <div class="content__card-Body p-4">
                                     <h5 class="content__card-body-title">Creative Design</h5>
@@ -61,7 +61,7 @@
                             </div>                            
                             <div class="card">
                                 <div class="content__card-Header">
-                                    <img src="../../assets/images/webdevelopment.jpg" alt="https://unsplash.com/photos/eYpcLDXHVb0?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">
+                                    <img src="../../assets/images/WebDev.jpg" alt="https://unsplash.com/photos/eYpcLDXHVb0?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">
                                 </div>
                                 <div class="content__card-Body p-4">
                                     <h5 class="content__card-body-title">Web Development</h5>
@@ -187,7 +187,7 @@ data() {
         Category: 'Logo',
     }, 
     ],
-    portofolioLimit: 9,
+    portofolioLimit: 6,
     };
 },
 };
