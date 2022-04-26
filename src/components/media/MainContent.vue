@@ -61,7 +61,7 @@
                             </div>                            
                             <div class="card">
                                 <div class="content__card-Header">
-                                    <img src="../../assets/images/reels&tiktok.jpg" alt="https://unsplash.com/photos/eYpcLDXHVb0?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">
+                                    <img src="../../assets/images/WebDev.jpg" alt="https://unsplash.com/photos/eYpcLDXHVb0?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">
                                 </div>
                                 <div class="content__card-Body p-4">
                                     <h5 class="content__card-body-title">Web Development</h5>
