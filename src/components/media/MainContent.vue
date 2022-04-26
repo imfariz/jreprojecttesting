@@ -70,7 +70,7 @@
                             </div>                            
                             <div class="card">
                                 <div class="content__card-Header">
-                                    <img src="../../assets/images/reels&tiktok.jpg" alt="https://unsplash.com/photos/aS4Duj2j7r4?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">
+                                    <img src="../../assets/images/Photo&Video.jpg" alt="https://unsplash.com/photos/aS4Duj2j7r4?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">
                                 </div>
                                 <div class="content__card-Body p-4">
                                     <h5 class="content__card-body-title">Photography & Video</h5>
