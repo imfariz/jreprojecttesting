@@ -8,6 +8,41 @@
                 </button>
             </div>
     </section>
+    <section class="services container-fluid py-5 bg-light-orange-furnitur">
+            <div class="container text-center text-md-start">
+                <div class="row align-items-center">
+                    <div class="col py-4 description-service">
+                        <p class="content__title">Why choose us?</p>
+                        <h2 class="content__bodytext fs-2 pb-3 pt-3">
+                            JRE FURNITUR are Specialists in: 
+                        </h2>
+                        <ul class="mt-4 mt-md-0 text-start">
+                            <li @mouseover="ServiceImage = './images/furnitur/SWebDev.jpg'">
+                                <p>The Best Materials with High Quality</p>
+                            </li>
+                            <li @mouseover="ServiceImage = './images/furnitur/SCreativedesign.jpg'">
+                                <p>Custom Furniture by Request</p>
+                            </li>
+                            <li @mouseover="ServiceImage = './images/furnitur/SReels&tiktok.jpg'">
+                                <p>Uniqueness</p>
+                            </li>
+                            <li @mouseover="ServiceImage = './images/furnitur/SSocialEngagement.jpg'">
+                                <p>Artistic</p>
+                            </li>
+                            <li @mouseover="ServiceImage = './images/furnitur/SPhoto&Video.jpg'">
+                                <p>Eco-Friendly</p>
+                            </li>
+                        </ul>
+                        <!-- <button class="btn btn-bengkel" @click="$emit('linkedToMedia')">
+                            <i class="bi bi-whatsapp me-1"></i> Contact Us
+                        </button> -->
+                    </div>
+                    <div class="col images-service d-none d-md-block">
+                        <img :src="ServiceImage" alt="Specialist">
+                    </div>
+                </div>
+            </div>
+        </section>
     <section class="container-fluid catalogue">
         <div class="container text-center py-5">
             <h5 class="catalogue__title mb-5">RECENT PRODUCTS</h5>
@@ -69,7 +104,8 @@ export default {
                     name: 'Cangkir Mauttie',
                     images : '../../assets/images/Catalogue1.png'
                 },
-            ]
+            ],
+            ServiceImage: './images/furnitur/SPhoto&Video.jpg',
         }
     },
 }
@@ -81,6 +117,21 @@ export default {
     height: 80vh;
     display: flex;
     justify-content: center;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li:hover {
+    list-style: circle;
+    transform: translateX(2em);
+    transition: all 0.3s ease-out;
+    color: rgb(12, 85, 25);
+}
+
+.services .images-service img{
+    height: 400px;
 }
 
 .services img {
