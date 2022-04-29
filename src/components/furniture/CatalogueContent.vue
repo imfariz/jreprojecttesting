@@ -121,12 +121,14 @@ export default {
 
 ul li {
     list-style: none;
+    transform: translateX(0em);
+    transition: transform 0.3s ease-out;
 }
 
 ul li:hover {
     list-style: circle;
     transform: translateX(2em);
-    transition: all 0.3s ease-out;
+    transition: transform 0.3s ease-out;
     color: rgb(12, 85, 25);
 }
 
